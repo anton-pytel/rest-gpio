@@ -20,9 +20,9 @@ Examples:
 --------
 
 Get PCF8591 Analogue value read first http://www.nxp.com/documents/data_sheet/PCF8591.pdf
-- request:
-  http://192.168.1.16:3500/inputs/**ADC01**
-- response:
+- request:  
+  http://192.168.1.16:3500/inputs/ADC01
+- response:  
   {"pin":0,"gpio":"ADC01","AIN":1,"value":246}
   
 
