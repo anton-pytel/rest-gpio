@@ -8,8 +8,10 @@ Dependencies npm:
 - require('rpio');
 - require('pcf8591');
 
-Project is mainly inspired with many thanks by 
-http://www.robert-drummond.com/2015/06/01/rest-api-on-a-pi-part-2-control-your-gpio-io-ports-over-the-internet/
+Project is inspired with many thanks by 
+- http://www.robert-drummond.com/2015/06/01/rest-api-on-a-pi-part-2-control-your-gpio-io-ports-over-the-internet/
+- https://github.com/jperkin/node-rpio
+- https://www.npmjs.com/package/pcf8591
 
 Start server:
 ------------
