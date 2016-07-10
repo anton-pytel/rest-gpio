@@ -13,8 +13,8 @@ http://www.robert-drummond.com/2015/06/01/rest-api-on-a-pi-part-2-control-your-g
 
 Start server:
 ------------
- cd rest-gpio
- sudo node gpioapi.js > stdout.txt 2> stderr.txt &
+ cd rest-gpio  
+ sudo node gpioapi.js > stdout.txt 2> stderr.txt &  
 
 Examples:
 --------
