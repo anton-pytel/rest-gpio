@@ -1,0 +1,28 @@
+{
+  "name": "restgpio",
+  "version": "1.0.0",
+  "description": "REST interface to GPIO",
+  "main": "gpioapi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anton-pytel/rest-gpio.git"
+  },
+  "keywords": [
+    "rest",
+    "gpio",
+    "sensors"
+  ],
+  "author": "anton pytel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anton-pytel/rest-gpio/issues"
+  },
+  "homepage": "https://github.com/anton-pytel/rest-gpio#readme",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "express": "^4.14.0"
+  }
+}
