@@ -84,7 +84,7 @@ function convertR2lux(R){
   var a1 = 153;
   var b1 = -22.47;
   var w = 0.01288;
-	return (a0 + a1*Math.cos(R*w) + b1*Math.sin(R*w));
+	return Math.round(a0 + a1*Math.cos(R*w) + b1*Math.sin(R*w));
 }
 
 app.use(express.static(__dirname));
@@ -108,9 +108,9 @@ app.get('/inputs/:id', function (req, res) {
     if ((req.params.id === ADCinputs[i].gpio)) {
 		// send to client an inputs object as a JSON string
 		getADCValue(ADCinputs[i].AIN, function(xValue) {
-		  ADCinputs[i].value = xValue;
+		  ADCinputs[i].value = convertR2lux(xValue);
 		  console.log('reading ADC port ' + ADCinputs[i].gpio + ' Value = ' + ADCinputs[i].value);	
-		  console.log(convertR2lux(ADCinputs[i].value));
+		  console.log(xValue);
 		  res.send(ADCinputs[i]);	
 		});
 		return;
